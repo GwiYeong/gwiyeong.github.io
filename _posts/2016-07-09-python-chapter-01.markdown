@@ -24,10 +24,10 @@ def factorial(x):
 ~~~~~~~~
 
 definition term 2
-* first
-* Second
- * second-first
- * second-second
+ * first
+ * Second
+  * second-first
+  * second-second
 
 
 
