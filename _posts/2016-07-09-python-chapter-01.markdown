@@ -24,18 +24,22 @@ def factorial(x):
 ~~~~~~~~
 
 definition term 2
-: This is the first line. Since the first non-space characters appears in
-column 3, all other lines have to be indented 2 spaces (or lazy syntax may
-  be used after an indented line). This tells kramdown that the lines
-  belong to the definition.
-:       This is the another definition for the same term. It uses a
-        different number of spaces for indentation which is okay but
-        should generally be avoided.
-   : The definition marker is indented 3 spaces which is allowed but
-     should also be avoided.
+* first
+* Second
+ * second-first
+ * second-second
 
 
-     | First cell|Second cell|Third cell
-     | First | Second | Third |
 
-     First | Second | | Fourth |
+ |-----------------+------------+-----------------+----------------|
+ | Default aligned |Left aligned| Center aligned  | Right aligned  |
+ |-----------------|:-----------|:---------------:|---------------:|
+ | First body part |Second cell | Third cell      | fourth cell    |
+ | Second line     |foo         | **strong**      | baz            |
+ | Third line      |quux        | baz             | bar            |
+ |-----------------+------------+-----------------+----------------|
+ | Second body     |            |                 |                |
+ | 2 line          |            |                 |                |
+ |=================+============+=================+================|
+ | Footer row      |            |                 |                |
+ |-----------------+------------+-----------------+----------------|
